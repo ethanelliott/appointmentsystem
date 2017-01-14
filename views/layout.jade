@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js')
+    script(src='//code.jquery.com/ui/1.12.1/jquery-ui.js')
+    script(src='/javascripts/numeral.min.js')
+    script(src='/javascripts/js.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+    if (typeof(error) !== 'undefined')
+      title EEA | #{error.status}
+    else
+      title EEA | #{title}
+    
+  body
+    header
+      h1 EEA
+    main
+      block content
+    footer  
+      p &copy; Ethan Elliott 2016
